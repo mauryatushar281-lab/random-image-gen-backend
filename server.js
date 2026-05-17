@@ -17,7 +17,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: "https://random-image-frontend.vercel.app/", // React app
+    origin: ["http://localhost:3000","https://random-image-frontend.vercel.app"],
     credentials: true
 }));
 app.use(express.json());
